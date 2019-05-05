@@ -1,27 +1,28 @@
 package com.thumati.corejava.lambdaexpressions;
 
-public class LambdaExpressions {
-
-	public static void main(String[] args) {
-		//() -> {System.out.println("Hello");};
-		() -> System.out.println("Hello");
-		(int a, int b) -> {System.out.println(a+b);};
-		(a, b) -> {System.out.println(a+b);};
-		(a, b) -> System.out.println(a+b);
-		(a, b) -> {return a+b;};
-		(a, b) -> a+b;
-		(a) -> {System.out.println(a);};
-		a -> System.out.println(a);
-		s -> s.length();
-	}
-
-}
-
+/*
 @FunctionalInterface
 interface MyFunctionalInterface1{
-	
+
+	public class LambdaExpressions {
+
+		public static void main(String[] args) {
+			//() -> {System.out.println("Hello");};
+			() -> System.out.println("Hello");
+			(int a, int b) -> {System.out.println(a+b);};
+			(a, b) -> {System.out.println(a+b);};
+			(a, b) -> System.out.println(a+b);
+			(a, b) -> {return a+b;};
+			(a, b) -> a+b;
+			(a) -> {System.out.println(a);};
+			a -> System.out.println(a);
+			s -> s.length();
+		}
+
+	}
+
 	public int add(int a, int b);
-	
+
 	//public int sub(int a, int b);
 	
 	default public void show() {
@@ -62,3 +63,5 @@ interface MyFuncInterfC2 extends MyFuncInterfP{
 interface MyFuncInterfC3 extends MyFuncInterfP{
 	public void m2();
 }
+
+ */

@@ -52,7 +52,7 @@ public class AnonymousInnerClass {
 		
 		x = 999;
 		y = 888;
-		a = 20;
+		//a = 20;
 	}
 	
 	public static void main(String[] args) {

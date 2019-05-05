@@ -54,13 +54,13 @@ class Child extends Parent{
 		System.out.println("From Child's m3()");
 	}
 	
-	public void m4() {
+	/*public void m4() {
 		System.out.println("From Child's m4()");
 	}
 	
 	public static void m5() {
 		System.out.println("From Child's m5()");
-	}
+	}*/
 	
 	@Override
     // no issue while throwing unchecked exception 
@@ -68,12 +68,12 @@ class Child extends Parent{
 		System.out.println("From Child's m6()");
 	}
 
-	@Override
+	//@Override
     // compile-time error 
     // issue while throwin checked exception 
-	public void m7() throws Exception{
+	/*public void m7() throws Exception{
 		System.out.println("From Child's m7()");
-	}
+	}*/
 	
 }
 
@@ -108,12 +108,12 @@ class Child3 extends Parent1{
 }
 
 class Child4 extends Parent1{ 
-    @Override
+    //@Override
     // compile-time error 
     // issue while throwing parent exception 
-    void m1() throws Exception { 
+    /*void m1() throws Exception {
     	System.out.println("From child4 m1()");
-    } 
+    } */
 } 
 
 public class Polymorphism {
