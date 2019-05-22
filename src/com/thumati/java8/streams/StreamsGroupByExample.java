@@ -1,6 +1,7 @@
 package com.thumati.java8.streams;
 
 import java.io.*;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -48,5 +49,12 @@ public class StreamsGroupByExample {
 
     public static Map<Long, Long>  totalSalaryForDepartment(List<Employee> empList){
         return empList.stream().collect(Collectors.groupingBy(Employee::getDeptID, Collectors.summingLong(Employee::getSalary)));
+    }
+
+    //Find the employee with the maximum salary:
+    public static Employee mostExpensiveResource(List<Employee> employees) {
+        return employees.stream()
+                .collect(Collectors.<Employee>maxBy(
+                        Comparator.comparing(Employee::getSalary))).get();
     }
 }
