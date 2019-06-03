@@ -5,9 +5,10 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static java.util.Map.Entry.comparingByKey;
 import static java.util.Map.Entry.comparingByValue;
 import static java.util.stream.Collectors.toMap;
+
+//import java.util.
 
 public class SortingHashMapByValuesAscendingDescending {
     public static void main(String[] args) {
