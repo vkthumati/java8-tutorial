@@ -31,8 +31,9 @@ public class TestClassLoaders {
 		System.out.println("Class Loader loaded TestClassLoaders class : "+TestClassLoaders.class.getClassLoader());
 		System.out.println("Class Loader loaded Book class : "+Book.class.getClassLoader());
 		
-		Launcher l = Launcher.getLauncher();
-		URL[] urLs = l.getBootstrapClassPath().getURLs();
+		//Launcher l = Launcher.getLauncher();
+		//URL[] urLs = l.getBootstrapClassPath().getURLs();
+		URL[] urLs = null;
 		for(URL url : urLs) {
 			System.out.println("Bootstrap Class Path : "+url.getPath());
 		}

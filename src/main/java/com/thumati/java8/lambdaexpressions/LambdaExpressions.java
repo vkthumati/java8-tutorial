@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class LambdaExpressions {
     public static void main(String[] args) {
@@ -24,5 +26,13 @@ public class LambdaExpressions {
         Collections.sort(list, (a, b) -> a.compareTo(b));
 
         System.out.println("After sort with custom comparator using lambda expression : "+list);
+
+        Predicate<String> p = s -> list.add(s);
+        Consumer<String> c = s -> list.add(s);
+
+        //Thread.currentThread().dumpStack();
+
+        String str = new String("Hello");
+        str.length();
     }
 }

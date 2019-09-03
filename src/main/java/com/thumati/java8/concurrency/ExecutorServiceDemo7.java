@@ -1,7 +1,5 @@
 package com.thumati.java8.concurrency;
 
-import jdk.nashorn.internal.codegen.CompilerConstants;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
